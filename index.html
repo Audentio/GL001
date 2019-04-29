@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            // compares whatever you pass
+            function overEighteen(n) {
+                if (n >= 18) {
+                    return true;
+                } else  {
+                    //catch all
+                    return false;
+                }
+            }
+        
+        
+            var name = prompt("What is your name?");
+            var age = prompt("How old are you?");
+        
+        
+            console.log( "Hello " + name);
+        
+            var checkAgeValue = overEighteen(age);
+        
+            if (checkAgeValue) {
+                //reveal a secret
+                alert("Hello " + name  + ". Congrats on being 18 or older");
+        
+                if (name[0].toLowerCase() == "a") {
+                    alert("And for having a name that starts with the letter 'a'!");
+                }
+            } else {
+                alert("You aren't old enough, bro. ");
+            }
+        
+        </script>
+    </head>
+    <body>
+        Open your browser console. <a href="https://support.airtable.com/hc/en-us/articles/232313848-How-to-open-the-developer-console">Learn how here</a>.
+    </body>
+</html>
+
